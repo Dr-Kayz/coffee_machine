@@ -98,11 +98,10 @@ while True:
         choose = input("What would you like? Coffee >> 'espresso' / 'cappuccino' / 'latte' OR 'report': Press 'q' to quit: ").lower()
 
     if choose=="report":
-        print(f""" \twater: {resources["water"]}ml
-        \tmilk: {resources["milk"]}ml
-        \tcoffee: {resources["coffee"]}mg
-        \tmoney: ${company_money}
-        """)
+        print(f"water: {resources['water']}ml")
+        print(f"milk: {resources['milk']}ml")
+        print(f"coffee: {resources['coffee']}mg")
+        print(f"money: ${company_money}")
     elif choose=="q":
         break
     else:
